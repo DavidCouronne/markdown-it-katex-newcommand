@@ -1,0 +1,29 @@
+{
+  "name": "markdown-it-katex-newcommand",
+  "version": "1.0.0",
+  "description": "Plugin markown-it for katex rendering with ability to add global \\newcommand",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidCouronne/markdown-it-katex-newcommand.git"
+  },
+  "keywords": [
+    "markdown-it",
+    "katex",
+    "npm",
+    "markdown",
+    "latex"
+  ],
+  "author": "David Couronné",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidCouronne/markdown-it-katex-newcommand/issues"
+  },
+  "homepage": "https://github.com/DavidCouronne/markdown-it-katex-newcommand#readme",
+  "dependencies": {
+    "katex": "^0.10.0"
+  }
+}
