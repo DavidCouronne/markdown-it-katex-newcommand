@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-katex-newcommand",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Plugin markown-it for katex rendering with ability to add global \\newcommand",
   "main": "index.js",
   "scripts": {
