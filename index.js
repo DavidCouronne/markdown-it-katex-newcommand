@@ -10,10 +10,6 @@ for rendering output.
 /*jslint node: true */
 'use strict';
 
-const { macroskatex } = require("./macroskatex");
-
-const { newcommand } = require("./newcommand");
-
 var katex = require('katex');
 // Test if potential opening or closing delimieter
 // Assumes that there is a "$" at state.src[pos]
