@@ -29,7 +29,7 @@ const md = require('markdown-it')();
 const mynewcommands = '\\displaystyle'
     +'\\newcommand{\\vect}[1]{\\overrightarrow{#1}}'
     +'\\newcommand{\\Oij}{\\left(O;\\vect{i};\\vect{j}\\right)}';
-const mkn = require('./param/');
+const mkn = require('markdown-it-katex-newcommand');
 md.use(mkn, {
       "newcommands": mynewcommands
     });
@@ -46,6 +46,7 @@ const mymacroskatex = {
     "\\f": "f(#1)"
 };
 const mynewcommands = '\\newcommand{\\g}[1]{g\\left(#1\\right)}';
+const mkn = require('markdown-it-katex-newcommand');
 md.use(mkn, {
     "macros": mymacroskatex,
     "newcommands": mynewcommands
