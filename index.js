@@ -160,8 +160,7 @@ module.exports = function math_plugin(md, options) {
 
     options = options || {};
     options.throwOnError = false;
-    options.macros = options.macros || macroskatex;
-    options.newcommands = options.newcommands || newcommand;
+    options.newcommands = options.newcommands || '';
 
     // set KaTeX as the renderer for markdown-it-simplemath
     var katexInline = function(latex){
