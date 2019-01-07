@@ -159,13 +159,14 @@ module.exports = function math_plugin(md, options) {
     // Default options
 
     options = options || {};
+    options.throwOnError = false;
+    options.macros = options.macros || macroskatex;
+    options.newcommands = options.newcommands || '';
 
     // set KaTeX as the renderer for markdown-it-simplemath
     var katexInline = function(latex){
         options.displayMode = false;
-        options.throwOnError = false;
-        options.macros = macroskatex;
-        latex = newcommand + latex;
+        latex = options.newcommands + latex;
         
         try{
             return katex.renderToString(latex, options);
@@ -182,9 +183,7 @@ module.exports = function math_plugin(md, options) {
 
     var katexBlock = function(latex){
         options.displayMode = true;
-        options.throwOnError = false;
-        options.macros = macroskatex;
-        latex = newcommand + latex;
+        latex = options.newcommands + latex;
         try{
             return "<p>" + katex.renderToString(latex, options) + "</p>";
         }
